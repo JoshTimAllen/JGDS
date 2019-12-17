@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 30px;
+    text-decoration:  none;
+}
+body,html{
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22, 22, 22);   
+    margin: auto;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    height: 60px;
+    text-align: center;
+    background-color: rgb(22, 22, 22);
+    position: fixed;
+    z-index: 999 ;
+    box-shadow: 0px 1px 1px rgb(175, 175, 175);
+}
+.falseheader{height: 60px;}
+header .space{
+    flex: 0.6;
+}
+.headerLogo{
+    flex:1;
+    display: flex;
+    margin-top: 20px;
+}
+.headerLogo img{
+    flex: 1;
+height: 80px;
+}
+nav{
+    width: 50%;
+    
+    margin: auto;
+}
+header .links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+    font-size: 18px;
+}
+.menubtn{
+    position: relative;
+    display: none;
+}
+.mbline{
+    display: block;
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  position: relative;
+  margin-top: 5px;
+}
+#ResponsiveMenu{
+    position: fixed;
+    background-color: rgb(22, 22, 22);
+    height: 100%;
+    width: 100%;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    display:  none;
+    z-index: 909;
+    min-height: 600px;
+}
+#ResponsiveMenu .links{
+    list-style: none;
+    position: relative;    
+    bottom: 60px;
+}
+.VidContainer{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 600px;
+}
+#BgVideo{
+    position: fixed;
+    width: 100%;
+    min-height: 600px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+.CTA{
+    width: 100%;
+    height: 90%;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    min-height: 600px;
+}
+h1{
+    font-size: 60px;
+    bottom: 110px;
+    color: rgb(212, 212, 212);
+    filter: drop-shadow(0px 10px 5px black);
+    position: relative;
+}
+h2{
+    font-size: 50px;
+}
+.CTA p{
+    position: relative;
+    font-size: 28px;
+    left: 20px;
+}
+.CTA .button{
+    position: relative;
+    left: 50%;
+    margin-left: -200px;
+    background-color: rgb(44,47,51);
+    padding: 2px 25px 2px 25px;
+    border-radius: 5px;
+    display: flex;
+    width: 380px;
+}
+.CTA img{
+    height: 40px;
+    margin-top: 6px; 
+    padding-right: 10px;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+section{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    z-index: 100;
+}
+.Top{
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.About{
+    height: 300px;
+    background-color: rgb(56, 56, 56);  
+    background-color: rgb(22, 22, 22);                      
+}
+footer{
+    height: 20vh;
+    background: rgb(78, 78, 78);
+    top:100px;
+}
+
+@media(min-aspect-ratio :16/9){
+    #BgVideo{
+        min-height: 0px;
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio :16/9){
+    #BgVideo{
+        min-height: 0px;
+        width: auto;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 900px ) {
+    header .space{
+        flex: 1;
+    }
+    .menubtn{
+        display:  block;
+    }
+     header .link{
+        display: none;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 500px ) {
+    h1{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 800px ) {
+    #BgVideo{
+        display: none;
+    }
+    .VidContainer{
+        background-image: url("../Resources/poster.jpg");
+        background-repeat: no-repeat;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        background-size: cover;;
+        background-position: 50%;
+        opacity: 0.5;
+    }
+    .CTA p{
+        position: relative;
+        font-size: 20px;
+        left: 25px;
+    }
+    .CTA .button{
+        position: relative;
+        left: 50%;
+        margin-left: -140px;
+        background-color: rgb(44,47,51);
+        padding: 2px 25px 2px 25px;
+        border-radius: 5px;
+        display: flex;
+        width: 280px;
+    }
+    .CTA img{
+        height: 30px;
+        padding: 0;
+        margin-right: -5px;
+        margin-left: -10px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 104px ) {
+    #BgVideo{
+        display: none;
+    }
+    .VidContainer{
+        background-image: url("../Resources/poster.jpg");
+        background-repeat: no-repeat;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        background-size: cover;;
+        background-position: 50%;
+    }
+}
