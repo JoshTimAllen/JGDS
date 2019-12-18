@@ -37,11 +37,12 @@ header .space{
 .headerLogo{
     flex:1;
     display: flex;
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 .headerLogo img{
     flex: 1;
-height: 80px;
+height: 60px;
 }
 nav{
     width: 50%;
@@ -79,7 +80,6 @@ header .links{
     align-items: center;
     display:  none;
     z-index: 909;
-    min-height: 600px;
 }
 #ResponsiveMenu .links{
     list-style: none;
@@ -120,9 +120,18 @@ h1{
     position: relative;
 }
 h2{
-    font-size: 50px;
+    font-size: 35px;
+    margin: auto;
+    
+    text-align: center;
+    color: rgb(212, 212, 212);
+    filter: drop-shadow(0px 10px 5px black);
 }
-.CTA p{
+h3{
+    font-size: 25px;
+    color: rgb(212, 212, 212);
+}
+.CTA h3{
     position: relative;
     font-size: 28px;
     left: 20px;
@@ -150,6 +159,10 @@ section{
     display: flex;
     position: relative;
     z-index: 100;
+    margin: auto;
+}
+section p{
+    font-size: 15px;
 }
 .Top{
     width: 100%;
@@ -159,30 +172,68 @@ section{
 .container{
     width: 100%;
     height: 100%;
+    margin: auto;
 }
 .About{
-    height: 300px;
     background-color: rgb(56, 56, 56);  
-    background-color: rgb(22, 22, 22);                      
+    background-color: rgb(22, 22, 22);    
+    background-color: rgb(22, 22, 22);  
+    border-top: 1px solid rgb(175, 175, 175);     
+                                           
+}
+.MadeByCommunity{
+    background-color: rgb(34, 34, 34);  
+    border-top: 1px solid rgb(175, 175, 175);  
+} 
+.DisplayContainer{
+    display:flex;
+    width:  100%;
+    justify-content: space-between;
+     align-items: center;
+    padding: 50px;
+}
+.GameDisplay{
+    flex: 1;
+    filter: drop-shadow(0px 10px 5px black);
+    text-align: left;
+}
+.GameDisplay img{
+    width: 100%;
+    max-height: 100%;
+      height: 100%;
+}
+.GameDisplay .ImageContainer{
+    width: 281px;
+    height:  189px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;  
 }
 footer{
     height: 20vh;
     background: rgb(78, 78, 78);
-    top:100px;
+    background-color: rgb(22, 22, 22);  
+    border-top: 1px solid rgb(175, 175, 175);  
+    z-index: 800;
 }
 
 @media(min-aspect-ratio :16/9){
     #BgVideo{
-        min-height: 0px;
         width: 100%;
         height: auto;
+    }
+    .VidContainer{
+        min-height: 300px;
     }
 }
 @media(max-aspect-ratio :16/9){
     #BgVideo{
-        min-height: 0px;
         width: auto;
         height: 100%;
+    }
+    .VidContainer{
+        min-height: 300px;
     }
 }
 @media only screen and (max-width: 900px ) {
@@ -205,10 +256,10 @@ footer{
     }
 }
 @media only screen and (max-width: 800px ) {
-    #BgVideo{
+    #BgVideog{
         display: none;
     }
-    .VidContainer{
+    .VidContainers{
         background-image: url("../Resources/poster.jpg");
         background-repeat: no-repeat;
         display: block;
@@ -220,7 +271,7 @@ footer{
         background-position: 50%;
         opacity: 0.5;
     }
-    .CTA p{
+    .CTA h3{
         position: relative;
         font-size: 20px;
         left: 25px;
@@ -246,10 +297,10 @@ footer{
     }
 }
 @media only screen and (max-width: 104px ) {
-    #BgVideo{
+    #BgVideog{
         display: none;
     }
-    .VidContainer{
+    .VidContainers{
         background-image: url("../Resources/poster.jpg");
         background-repeat: no-repeat;
         display: block;

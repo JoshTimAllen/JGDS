@@ -35,10 +35,11 @@ var body = document.getElementById("body");
   
   var VidContainer = document.getElementById("VidContainer");
 
+ 
   var initTransparency = 0.5;
 function scrollfunction(){
 
-  var top = document.getElementById("top");
+  var top = document.getElementById("Top");
 
   
   
@@ -46,7 +47,9 @@ function scrollfunction(){
   
   var derivedMovement = 0.0;
 
-  //derivedMovement = (window.pageYOffset/(body.offsetHeight));
+  var MoveFactor  = 150;
+
+  derivedMovement = (window.pageYOffset/(body.offsetHeight));
 
     //sec1.style.bottom = `${((window.pageYOffset-body.offsetHeight)/((body.offsetHeight)))*100}px`;
 
@@ -54,12 +57,14 @@ function scrollfunction(){
  // console.log(derivedMovement);
  derivedTransparency = (window.pageYOffset/(body.offsetHeight));
 
-  //top.style.top = `${derivedMovement*400}px`;
- 
+  top.style.bottom = `${derivedMovement*MoveFactor}px`;
+  BgVideo.style.bottom = `${derivedMovement*MoveFactor}px`;
+  VidContainer.style.bottom = `${derivedMovement*MoveFactor}px`;
+
   if(derivedTransparency>initTransparency){
-    BgVideo.style.opacity = `${1-derivedTransparency}`;
+    BgVideo.style.opacity = `${0.9-derivedTransparency}`;
     if (x.matches) { 
-      VidContainer.style.opacity = `${1-derivedTransparency}`;
+      VidContainer.style.opacity = `${0.9-derivedTransparency}`;
     }
     else{
       VidContainer.style.opacity = 1;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Martel+Sans:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Martel:900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles/indexStyle.css">
     <link rel="icon" href="Resources/icon.png">
     <title>Jamaica Game Development Society</title>
@@ -13,14 +14,17 @@
 <body id="body">
     
     <header>
-        <div class="headerLogo"><a href=""><img src="Resources/logo.png" alt=""></a></div>
+        <div class="headerLogo"><a href=""><img src="Resources/JGDS.png" alt=""></a></div>
         <div class="space"></div>
+        <!--Regular Menu-->
         <nav>
             <ul class="links">
                 <li><a href="https://discord.gg/hNYQgq" target="blank" class="link" > <img src="Resources/DiscordTextnLogo.png" alt="Discord" style="height: 45px; margin-top: 8px;"> </a></li>
                 <li><a href="" class="link" >About</a></li>
                 <li><a href="" class="link" >Newsletters</a></li>
                 <li><a href="" class="link" >Contacts</a></li>
+                <!--li><a href="" class="link" >Login/Sign up</a></!--li-->
+                <!--Burger Menu Icon / Div / or whatever... Just know its made using divs :) -->
                <a onclick="ShowMenu();">
                 <div class="menubtn">
                     <div class="mbline"></div>
@@ -28,11 +32,13 @@
                     <div class="mbline"></div>
                 </div>
             </a> 
+            <!-- -->
             </ul>
             
         </nav>
         
     </header>
+    <!-- Menu To Display When Burger Icon is pressed-->
     <div id="ResponsiveMenu">
         <ul class="links">
             <li><a href="https://discord.gg/hNYQgq" target="blank" class="link" > <img src="Resources/DiscordTextnLogo.png" alt="Discord" style="height: 45px; margin-top: 8px;"> </a></li>
@@ -41,36 +47,110 @@
             <li><a href="" class="link" >Contacts</a></li>
         </ul>
     </div>
+    <!-- -->
+
+    <!--This is Just here to keep space-->
 <div class="falseheader"></div>
 
+<!-- B ackground Video -->
 <div class="VidContainer" id="VidContainer">
     <video id="BgVideo" src="Resources/BackgroundVideo.mp4" muted autoplay loop></video>
 </div>
+<!-- -->
 
-    <section class="Top">
+    <!--Top Section -->
+    <section class="Top" id="Top" >
     <div  class="container" >
-        
+        <!-- Call To Action -->
     <div class="CTA">
         <div>
                 <h1>Jamaica Game Development <br> Society</h1>
-                <a href="https://discord.gg/hNYQgq" target="blank" class="button"> <img src="Resources/Discord.png" alt=""> <p>JOIN THE DISCORD</p> </a></div>
+                <a href="https://discord.gg/hNYQgq" target="blank" class="button"> <img src="Resources/Discord.png" alt=""> <h3>JOIN THE DISCORD</h3> </a></div>
             </div>
         </div>
     </section>
 
     <section class="About">
         <div  class="container" >
+            <div style="height: 30px;" ></div>
             <h2>About JGDS</h2>
-            <hr style="width: 90%; margin-top: 40px; height: 0.1px;">
+            <!-- The Line -->
+            <div style="width: 60%; margin: auto; margin-top: 20px; margin-bottom: 20px; height: 1px; background-color: white;"></div>
+            
+            <p style="width: 70%; margin: auto;" >
+                <!--Text HERE -->
+                Text Here
+            </p>
+            <div style="height: 30px;" ></div>
+        </div>
+    </section>
+    <!--Made By Community -->
+    <section class="MadeByCommunity">
+        <div  class="container" >
+            <!--Adding Space -->
+            <div style="height: 30px;" ></div>
+
+            <h2>Made by the Community</h2>
+            <!-- The Line -->
+            <div style="width: 90%; margin: auto; margin-top: 20px; margin-bottom: 20px; height: 1px; background-color: white;"></div>
+
+            <!--Container For the Displayed Games -->
+            <div class="DisplayContainer">
+                <!-- Game Display are inside Empty divs because DisplayContainer is Displayed as Flex -->
+                <div>
+                    <div class="GameDisplay">
+                        <div class="ImageContainer">
+                        <img src="Resources/Athletic Games AD.png" alt="">
+                    </div>
+                    <div style="height: 20px;" ></div>
+                    <a href="https://play.google.com/store/apps/details?id=com.JoshTimAllen.AthleticGamess" target="blank" >
+                        <h3   style="margin-bottom: -20px ;">
+                            Athletic Games
+                        </h3>
+                    </a>
+                        <p style="display: inline;" >  By:</p> <a style="display: inline; color: rgb(73, 73, 255); font-size: 15px;" >Josh-Tim Allen </a>
+                    </div>
+                </div>
+                <!-- Game Display-->
+                <div>
+                    <div class="GameDisplay">
+                        <div class="ImageContainer">
+                        <img src="Resources/dive.jpg" alt="">
+                    </div>
+                    <div style="height: 20px;" ></div>
+                    <a href="https://play.google.com/store/apps/details?id=com.JoshTimAllen.AthleticGamess" target="blank">
+                        <h3   style="margin-bottom: -20px ;">
+                            Dive
+                        </h3>
+                    </a>
+                        <p style="display: inline;" >  By:</p> <a style="display: inline; color: rgb(73, 73, 255); font-size: 15px;" >Cortechx </a>
+                    </div>
+                </div>
+                <!--Game Display -->
+                <div>
+                    <div class="GameDisplay">
+                        <div class="ImageContainer">
+                        <img src="Resources/GrimmNTonic.jpg" alt="">
+                    </div>
+                    <div style="height: 20px;" ></div>
+                    <a href="https://store.steampowered.com/app/942020/Grimm__Tonic/" target="blank" >
+                        <h3   style="margin-bottom: -20px ;">
+                            Grimm & Tonic
+                        </h3>
+                    </a>
+                        <p style="display: inline;" >  By:</p> <a style="display: inline; color: rgb(73, 73, 255); font-size: 15px;" >Spritewrench </a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
-    <section class="About">
-        <div  class="container" >
-            <h2>About JGDS</h2>
-            <hr style="width: 90%; margin-top: 40px; height: 0.1px;">
-        </div>
-    </section>
+    <footer>
+
+    </footer>
+
     <script src="JavaScript/JavaScript.js"></script>
 </body>
 </html>
