@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Martel:900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/NewsletterArchiveStyle.css">
+    <link rel="icon" href="../Resources/icon.png">
+    <title>Jamaica Game Development Society</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="body">
+    
+    <header>
+        <div class="headerLogo"><a href="index.html"><img src="../Resources/JGDS.png" alt=""></a></div>
+        <div class="space"></div>
+        <!--Regular Menu-->
+        <nav>
+            <ul class="links">
+                <li><a href="https://discord.gg/hNYQgq" target="blank" class="link" > <img src="../Resources/DiscordTextnLogo.png" alt="Discord" style="height: 45px; margin-top: 8px;"> </a></li>
+                <li><a href="../About.html" class="link" >About</a></li>
+                <li><a href="" class="link" >Newsletters</a></li>
+                <li><a href="../Contacts.html" class="link" >Contacts</a></li>
+                <!--li><a href="" class="link" >Login/Sign up</a></!--li-->
+                <!--Burger Menu Icon / Div / or whatever... Just know its made using divs :) -->
+               <a onclick="ShowMenu();">
+                <div class="menubtn">
+                    <div class="mbline"></div>
+                    <div class="mbline"></div>
+                    <div class="mbline"></div>
+                </div>
+            </a> 
+            <!-- -->
+            </ul>
+            
+        </nav>
+        
+    </header>
+    <!-- Menu To Display When Burger Icon is pressed-->
+    <div id="ResponsiveMenu">
+        <ul class="links">
+            <li><a href="https://discord.gg/hNYQgq" target="blank" class="link" > <img src="../Resources/DiscordTextnLogo.png" alt="Discord" style="height: 45px; margin-top: 8px;"> </a></li>
+            <li><a href="../About.html" class="link" >About</a></li>
+            <li><a href="../Newsletters.html" class="link" >Newsletters</a></li>
+            <li><a href="../Contacts.html" class="link" >Contacts</a></li>
+        </ul>
+    </div>
+    <!-- -->
+
+    <!--This is Just here to keep space-->
+<div class="falseheader"></div>
+
+
+    <!--Top Section -->
+    <section class="Top" id="Top" >
+    <div  class="container" >
+            <div style="width: 100%; height: auto; margin: auto; border-bottom: 1px solid rgb(175, 175, 175); background-color: rgb(78, 78, 78);" >
+                <h2 id="heading">JGDS Weekly Round-Up Archive</h2>
+            </div>
+            <div style="
+            margin: auto; 
+            width: 100%; 
+            height: auto;
+             background-color: rgb(22, 22, 22);" >
+                
+                <div style="width: 95%; height: auto; margin:auto; padding: 20px; " id="ArchiveContainer">
+                    <!--p>A weekly newsletter with info, tips and tricks for the Jamaican Game Development Community.</p-->
+                
+                    <!--div class="ArchiveDisplay">
+                       <a href="NewslettersTOPIC.html"><p class="ArchiveDisplayTitle">JGDS Newsletter #23 - Game Developers Showcase at Kingston Artwalk, The $0 Marketing Game Guide and Genre Viability on Steam!</p></a> 
+                       <p class="ArchiveDisplayDate">25/12/2019</p>
+                    </div-->
+                </div>
+                
+            </div>
+                
+            
+                
+            
+        </div>
+    </section>
+    
+    <div style="margin: auto; width: 50%;">
+        <div style="width: 100%; display: flex; align-items: center; justify-content: center; margin:auto;">
+            <a onclick="NavigatePages(-1)" style="display: flex; align-items: center; justify-content: center; flex:1;">
+                <img style="height: 30px;" src="../Resources/Arrow.png" alt="">
+            </a>
+            <div style="flex: 1; justify-content: center; display: flex;" >
+                <p id="PageNumber"></p>
+            </div>
+            <a onclick="NavigatePages(1)" style="display: flex; align-items: center; justify-content: center; flex:1; transform: rotate(180deg);">
+                <img style="height: 30px;" src="../Resources/Arrow.png" alt="">
+            </a>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="../JavaScript/Archive.js"></script>
+    <script src="../JavaScript/JavaScript.js"></script>
+</body>
+</html>
